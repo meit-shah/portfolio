@@ -103,15 +103,13 @@
 
 @media only screen and (min-width: 1024px){
     .about-area .about-image > img {
-        /* padding: 5rem 0; */
-        /* width: 90rem;   */
         height: 35rem;
-     }
+    }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1023px){
     .header-area .main-menu .navbar{
-        padding: 1rem 1rem;
+        padding: 1rem 0.5rem;
     }
     .site-main .site-banner .site-title h3{
         padding-top: 10%;
@@ -133,17 +131,22 @@
         margin: 0 auto;
     }
     .about-title-text{
-        padding-top: 1.5rem;
+        text-align: center;
+        padding-top: 0;
+    }
+    button.linkedin-button{
+        width: 100%;
     }
 }
 
 @media only screen and (max-width:568px){
-    button.linkedin-button{
-        width: 100%;
-    }
     .about-title-text{
         text-align: center;
         font-size: 2.5rem;
+    }
+    .about-area .about-image > img {
+        height: 20rem;
+        margin-top: 2rem;
     }
 }
 
@@ -164,4 +167,21 @@
     .button-center{
         margin: 0 auto;
     }
+}
+
+
+/* Bouncing image animation */
+
+.bounce-image{
+    animation-name: bounce-image;
+    animation-duration: 3.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transform-origin: bottom;
+}
+
+@keyframes bounce-image{
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); } 
 }
