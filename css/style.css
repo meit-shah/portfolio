@@ -4,11 +4,11 @@
 
 /* CSS Variables */
 
-@import url(./partials/_variables.css);
+@import url(partials/_variables.css);
 
 /* global styling */
 
-@import url(./partials/_global.css);
+@import url(partials/_global.css);
 
 /* start navigation */  
 
@@ -17,7 +17,7 @@
 }
 
 .header-area .main-menu .navbar{
-    padding: 1rem 2rem;
+    padding: 1rem 6rem;
 }
 
 .header-area .main-menu .nav-item .nav-link{
@@ -82,18 +82,42 @@
 
 /* end banner area */
 
+/* about area */
+
+.about-title{
+    padding-left: 1.0rem;
+}
+
+.about-title-text{
+    padding-top: 6rem;
+}
+
+.about-paragraph{
+    line-height: 2.25rem;
+}
+
+/* end about area */
 
 /* responsiveness for all devices */
 
+
+@media only screen and (min-width: 1024px){
+    .about-area .about-image > img {
+        /* padding: 5rem 0; */
+        /* width: 90rem;   */
+        height: 35rem;
+     }
+}
+
 @media only screen and (max-width: 768px){
     .header-area .main-menu .navbar{
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
     }
     .site-main .site-banner .site-title h3{
-        padding-top: 20%;
+        padding-top: 10%;
     }
     .site-main .site-banner .site-title h1{
-        font-size: 4rem;
+        font-size: 3.75rem;
     }
     .site-main .site-banner .site-title h4{
         font-size: 1.25rem;
@@ -102,15 +126,25 @@
         text-align: center;
     }
     .site-main .site-banner .banner-image > img {
-        padding: 4rem 0;
+        padding: 2.5rem 0;
         height: auto;
     }
     .button-center{
         margin: 0 auto;
     }
-    /* .title-text{
-        line-height: 48px;
-    } */
+    .about-title-text{
+        padding-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:568px){
+    button.linkedin-button{
+        width: 100%;
+    }
+    .about-title-text{
+        text-align: center;
+        font-size: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 320px){
@@ -126,5 +160,8 @@
     }
     .title-text{
         margin-bottom: 0.5rem;
+    }
+    .button-center{
+        margin: 0 auto;
     }
 }
