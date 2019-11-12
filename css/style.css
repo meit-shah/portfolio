@@ -1,0 +1,130 @@
+/* import fonts for google fonts */
+
+@import url(./fonts.css);
+
+/* CSS Variables */
+
+@import url(./partials/_variables.css);
+
+/* global styling */
+
+@import url(./partials/_global.css);
+
+/* start navigation */  
+
+.header-area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 1rem;
+}
+
+.header-area .main-menu .navbar{
+    padding: 1rem 2rem;
+}
+
+.header-area .main-menu .nav-item .nav-link{
+    font: normal 500 16px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header-area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */
+
+
+/* banner area  */
+
+ .site-main .site-banner .site-title h3{
+    padding-top: 22.5%;
+    font-weight: 500;
+ }
+
+ .site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 25vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px)
+ }
+
+ .site-main .site-banner .site-title h1{
+    font-size: 3.25rem;
+ }
+
+ .site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+ }
+
+ .site-main .site-banner .banner-image > img {
+    padding: 5rem 0;
+    width: 90rem;  
+    height: 35rem;
+ }
+
+ .title-text{
+    font: normal bold 50px/72px var(--roboto);
+ }
+
+/* end banner area */
+
+
+/* responsiveness for all devices */
+
+@media only screen and (max-width: 768px){
+    .header-area .main-menu .navbar{
+        padding: 1rem 2rem;
+    }
+    .site-main .site-banner .site-title h3{
+        padding-top: 20%;
+    }
+    .site-main .site-banner .site-title h1{
+        font-size: 4rem;
+    }
+    .site-main .site-banner .site-title h4{
+        font-size: 1.25rem;
+    }
+    .site-main .site-banner .site-title h3, .site-main .site-banner .site-title h1, .site-main .site-banner .site-title h4{
+        text-align: center;
+    }
+    .site-main .site-banner .banner-image > img {
+        padding: 4rem 0;
+        height: auto;
+    }
+    .button-center{
+        margin: 0 auto;
+    }
+    /* .title-text{
+        line-height: 48px;
+    } */
+}
+
+@media only screen and (max-width: 320px){
+
+    .site-main .site-banner .site-title h3{
+        padding-top: 15%;
+    }
+    .site-main .site-banner .site-title h1{
+        font-size: 2.75rem;
+    }
+    .site-main .site-banner .site-title h4{
+        font-size: 1.1rem;
+    }
+    .title-text{
+        margin-bottom: 0.5rem;
+    }
+}
