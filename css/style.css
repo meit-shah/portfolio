@@ -90,16 +90,46 @@
 
 .about-title-text{
     padding-top: 6rem;
+    font-weight: bold;
+}
+
+.skills-title-text{
+    padding-bottom: 1rem;
 }
 
 .about-paragraph{
     line-height: 2.25rem;
 }
 
+p.para{
+    color: var(--text-color);
+}
+
 /* end about area */
+
+
+/* skills section starts */
+.site-main .skills-area{
+    padding:6rem 0rem;
+}
+
+.site-main > .skills-area .skills{
+    padding: 1.5rem 0;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .skills-area .skills:hover{
+    box-shadow: var(--box-shadow);
+}
+/* skills section ends */
 
 /* responsiveness for all devices */
 
+@media only screen and (min-width: 1280px){
+    .about-title-text, .skills-title-text{
+        letter-spacing: 5px;
+    }
+}
 
 @media only screen and (min-width: 1024px){
     .about-area .about-image > img {
@@ -134,13 +164,13 @@
         text-align: center;
         padding-top: 0;
     }
-    button.linkedin-button{
+    a.linkedin-button{
         width: 100%;
     }
 }
 
 @media only screen and (max-width:568px){
-    .about-title-text{
+    .about-title-text, .skills-title-text{
         text-align: center;
         font-size: 2.5rem;
     }

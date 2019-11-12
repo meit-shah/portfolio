@@ -35,16 +35,13 @@
                           <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">About</a>
+                          <a class="nav-link" href="#about-area">About</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Services</a>
+                          <a class="nav-link" href="#skills-area">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -64,11 +61,11 @@
                         <div class="col-lg-6 col-md-12 col-sm-12 col-12 site-title">
                             <h3 class="title-text">Hey, </h3>
                             <h1 class="title-text text-uppercase">I am Meit</h1>
-                            <h4 class="title-text text-uppercase mx-auto">Web Developer & Designer</h4>
+                            <h4 class="title-text text-uppercase mx-auto">Front-End Web Developer</h4>
                             <div class="main-buttons mx-auto text-center">
                                 <div class="d-flex flex-row flex-wrap justify-content-between">
-                                    <div class="button-center w-50"><button type="button" class="btn button primary-button text-uppercase w-100">Hire Me</button></div>
-                                    <div class="button-center w-50"><button type="button" class="btn button secondary-button text-uppercase w-100 ml-2">Get CV</button></div>
+                                    <div class="button-center w-50"><a class="btn button primary-button text-uppercase w-100" href="#">Hire Me</a></div>
+                                    <div class="button-center w-50"><a class="btn button secondary-button text-uppercase w-100 ml-2" href="#">Get CV</a></div>
                                 </div>
                             </div>
                         </div>
@@ -79,12 +76,12 @@
                 </div>
             </section>
             <!-- About Area -->
-            <section class="about-area">
+            <section id="about-area" class="about-area">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-1 order-2">
                             <div class="about-image">
-                                <img src="./images/img/aboutimage2.png" alt="about-image" class="img-fluid bounce-image">
+                                <img src="./images/img/aboutimage.png" alt="about-image" class="img-fluid bounce-image">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-1 about-title">
@@ -96,16 +93,75 @@
                             <div class="about-paragraph py-4 w-100">
                                 <p class="para">
                                  I'm a computer science graduate from Mumbai, India.
-                                 I have 1+ years of industrial experience in various web technologies and designing tools like HTML5, CSS3, Sass, JavaScript, Node.js, Bootstrap, PHP & Figma.  
+                                 I have 1+ years of industrial experience in various web technologies and designing tools like HTML5, CSS3, Sass, JavaScript, React.js, Node.js, Bootstrap & Figma.  
                                 </p>
                                 <p class="para">My key area of interest is UI/UX designing as I am fond of visual asthetics of the applications. Apart from designing, I also enjoy listening to pop music and reading.</p>
                             </div>
-                            <div class="button-center"><button type="button" class="btn button primary-button text-uppercase linkedin-button">LinkedIn Profile</button></div>
+                            <div class="button-center"><a class="btn button primary-button text-uppercase linkedin-button" href="#">Download CV</a></div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- End of About Area -->
+
+            <!-- Skills Area -->
+            <section id="skills-area" class="skills-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="text-uppercase skills-title-text font-weight-bold">Services Offered</h2>
+                            <p class="para my-4">
+                                These are some of the skills that I have garnered over a course of nearly 2 years. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container skills-list">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="skills">
+                                    <div class="skills-img text-center py-4">
+                                        <img src="./images/img/services/s1.png" alt="Skills-1">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-center">Web Development</h5>
+                                        <p class="card-text text-secondary">
+                                            JavaScript is the language which I generally prefer to develop web-applications.
+                                            Also, I like working on new technologies like React.js, Node.js
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="skills">
+                                    <div class="skills-img text-center py-4">
+                                        <img src="./images/img/services/s2.png" alt="Skills-2">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-center">UI/UX Design</h5>
+                                        <p class="card-text text-secondary">
+                                            I love visual asthetics of applications and softwares. Personally, I like designing prototypes of web applications in tools like Figma
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="skills">
+                                    <div class="skills-img text-center py-4">
+                                        <img src="./images/img/services/s3.png" alt="Skills-3">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-center">Web Design</h5>
+                                        <p class="card-text text-secondary">
+                                            Having worked on several real world applications / projects signifies that I focus mainly on building mobile first responsive web applications. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Skills Area -->
         </main>
         <!-- End Banner Image  -->
 
