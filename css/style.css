@@ -17,7 +17,6 @@
 }
 
 .header-area .main-menu .nav-item .nav-link{
-    font: normal 500 16px/2px var(--roboto);
     text-transform: uppercase;
     padding: 1.7rem;
     color: var(--title-color);
@@ -131,6 +130,21 @@ p.para{
         padding-top: 0;
     }
 
+    #portfolio-area  .projects a.img {
+        max-height: 120px;
+        max-width: 200px;
+    }
+
+    #tk-logo {
+        padding-top: 3.5rem;
+    }
+
+    #skt-logo {
+        padding-top: 4.0rem;
+    }
+
+
+
 /* portfolio section ends here  */
 
 /* contact section starts here  */
@@ -140,7 +154,7 @@ p.para{
     }
 
     .site-main .contact-area .contact {
-        background: url('../images/img/contact.png') no-repeat;
+        background: var(--gradient-color);
         margin: 0 auto;
     }
 
@@ -220,6 +234,15 @@ p.para{
     }
     a.linkedin-button{
         width: 100%;
+    }
+
+    #tk-logo {
+        padding-top: 2.5rem;
+    }
+
+    #skt-logo {
+        padding-top: 2.5rem;
+        max-width: 250px;
     }
 }
 
