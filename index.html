@@ -11,10 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- bootstrap css file -->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <!-- font awesome icons -->
-        <link rel="stylesheet" href="./css/all.min.css">
         <!-- custom css file -->
         <link rel="stylesheet" href="./css/style.css">
+        <!-- font-awesome css file -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -41,10 +41,10 @@
                           <a class="nav-link" href="#skills-area">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#portfolio-area">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact-area">Contact</a>
                         </li>
                       </ul>
                     </div>
@@ -58,14 +58,14 @@
             <section class="site-banner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 site-title">
-                            <h3 class="title-text">Hey, </h3>
-                            <h1 class="title-text text-uppercase">I am Meit</h1>
-                            <h4 class="title-text text-uppercase mx-auto">Front-End Web Developer</h4>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 site-title my-4">
+                            <h3 class="title-text my-4">Hey, </h3>
+                            <h1 class="title-text text-uppercase my-4 ">I am Meit</h1>
+                            <h4 class="title-text text-uppercase mx-auto my-4">Front-End Web Developer</h4>
                             <div class="main-buttons mx-auto text-center">
                                 <div class="d-flex flex-row flex-wrap justify-content-between">
-                                    <div class="button-center w-50"><a class="btn button primary-button text-uppercase w-100" href="#">Hire Me</a></div>
-                                    <div class="button-center w-50"><a class="btn button secondary-button text-uppercase w-100 ml-2" href="#">Get CV</a></div>
+                                    <div class="button-center w-50"><a class="btn button primary-button text-uppercase w-100" href="#contact-area">Hire Me</a></div>
+                                    <div class="button-center w-50"><a class="btn button secondary-button text-uppercase w-100 ml-2" href="/resume/resume.pdf">Get CV</a></div>
                                 </div>
                             </div>
                         </div>
@@ -93,11 +93,11 @@
                             <div class="about-paragraph py-4 w-100">
                                 <p class="para">
                                  I'm a computer science graduate from Mumbai, India.
-                                 I have 1+ years of industrial experience in various web technologies and designing tools like HTML5, CSS3, Sass, JavaScript, React.js, Node.js, Bootstrap & Figma.  
+                                 I have 2+ years of industrial experience in various web technologies and designing tools like HTML5, CSS3, Sass, JavaScript, React.js, Node.js, Bootstrap & Figma.  
                                 </p>
-                                <p class="para">My key area of interest is UI/UX designing as I am fond of visual asthetics of the applications. Apart from designing, I also enjoy listening to pop music and reading.</p>
+                                <p class="para">My key area of interest is UI/UX designing as I am fond of visual asthetics of the applications. Apart from designing, I enjoy listening to music and reading books.</p>
                             </div>
-                            <div class="button-center"><a class="btn button primary-button text-uppercase linkedin-button" href="#">Download CV</a></div>
+                            <div class="button-center"><a class="btn button primary-button text-uppercase linkedin-button" href="/resume/resume.pdf">Download CV</a></div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="container skills-list">
+                    <div class="container skills-list mt-4">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="skills">
@@ -162,9 +162,79 @@
                 </div>
             </section>
             <!-- End of Skills Area -->
-        </main>
-        <!-- End Banner Image  -->
 
+            <!-- Start of Portfoio Area   -->
+            <section id="portfolio-area" class="portfolio">
+                <div class="container">
+                    <div class="project-title text-center">
+                        <h2 class="text-uppercase title-h1 font-weight-bold portfolio-title-text">Recently Done Projects</h2>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center my-5 ">
+                        <button type="button" class="btn button portfolio-button-all px-4 py-2 mx-2" data-rel="all">All</button>
+                        <button type="button" class="btn button portfolio-button px-4 py-2 mx-2" data-rel="1">Recent</button>
+                        <button type="button" class="btn button portfolio-button px-4 py-2 mx-2" data-rel="2">Upcoming</button>
+                    </div>
+                    <div class="gallery" id="gallery">
+                        <div class="mb-3 ">
+                          <a href="http://atmi.org.in"><img class="img-fluid" src="images/img/atmi.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="mb-3 ">
+                            <a href="https://www.taazakitchen.com"><img class="img-fluid" src="images/img/taazakitchen.jpg" alt="Card image cap"></a>
+                          </div>
+                        <div class="mb-3 ">
+                            <a href="https://www.shankheshwartemple.org/"><img class="img-fluid" src="images/img/shankeshwartemple.jpg" alt="Card image cap"></a>
+                          </div>
+                      </div>
+                </div>
+            </section>
+            <!-- End of Portofolio Area -->
+            <!-- Start of Contact Area  -->
+                <section id="contact-area" class="contact-area py-4">
+                    <div class="container contact pt-4 pb-4">
+                        <div class="row py-4">
+                            <div class="col-lg-12 text-center">
+                                <h4 class="text-uppercase">Contact Me</h4>
+                                <p class="para text-light">For any project related work</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center row ">
+                            <form method="POST" action="https://formspree.io/contact@meitshah.com" class="w-50">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control rounded-0" id="message" rows="5" name="message" placeholder="Message" required></textarea>
+                                </div>
+                                <button  id="formSubmitButton" type="submit" class="btn btn-success w-100 mb-4 py-3">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            <!-- End of Contact Area -->
+        </main>
+        <!-- End main Area  -->
+        <!-- Start of footer area  -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="row d-block">
+                        <div class="site-logo text-center py-4">
+                            <a href="#"><img src="./images/img/logo.png" alt="logo" class="mx-0"></a>
+                        </div>
+                    </div>
+                    <div class="row d-block mb-4 social mx-auto">
+                        <h5 class="text-center text-uppercase">Follow me</h5>
+                        <div class="text-center mt-3">
+                            <a href="https://instagram.com/shah_meit" class="social-link"><i class="fa fa-instagram"></i></a>      
+                            <a href="https://github.com/meit-shah" class="social-link"><i class="fa fa-github"></i></a>
+                            <a href="https://linkedin.com/in/meit" class="social-link"><i class="fa fa-linkedin"></i></a> 
+                            <a href="https://wa.me/919833547858" class="social-link"><i class="fa fa-whatsapp"></i></a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of footer area -->
         <!-- Jquery js file -->
         <script src="js/jquery.3.4.1.js" ></script>
         <!-- Bootstrap js file -->

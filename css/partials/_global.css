@@ -1,5 +1,5 @@
 .title-text{
-    font: normal bold 50px var(--roboto);
+    /* font: normal bold 50px */
     margin-bottom: 1rem;
 }
 
@@ -11,13 +11,13 @@
 
 .button{
     padding: .8rem 2.2rem;
-    font: normal 500 16px var(--roboto);
+    font: normal 500 16px ;
     position: relative;
     border: 3px solid transparent;
     border-radius: 4px;
 }
 
-a.primary-button{
+a.primary-button, .button.portfolio-button-all {
     background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
@@ -25,13 +25,13 @@ a.primary-button{
     box-shadow: var(--box-shadow);
 }
 
-a.primary-button:hover{
+a.primary-button:hover, .button.portfolio-button-all:hover{
     background: whitesmoke;
     background-clip: padding-box;
     color: black;
 }
 
-a.primary-button::after, a.secondary-button::after{
+a.primary-button::after, a.secondary-button::after, .button.portfolio-button-all::after, .button.portfolio-button::after{
     position: absolute;
     top: -2px;
     left: -2px;
@@ -43,14 +43,14 @@ a.primary-button::after, a.secondary-button::after{
     border-radius: 4px;
 }
 
-a.secondary-button{
+a.secondary-button, .button.portfolio-button{
     background: white;
     color: black;
     background-clip: padding-box;
     transition: background .6s ease;
 }
 
-a.secondary-button:hover{
+a.secondary-button:hover, .button.portfolio-button:hover{
     background: var(--gradient-color);
     color: whitesmoke;
     box-shadow: var(--box-shadow);
