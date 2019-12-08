@@ -96,9 +96,9 @@
     line-height: 2.25rem;
 }
 
-p.para{
+/* p.para{
     color: var(--text-color);
-}
+} */
 
 /* end about area */
 
@@ -193,6 +193,15 @@ p.para{
     }
 
 /* footer section ends here  */
+
+
+/* miscellaneous starts here */
+    .card-title {
+        font-weight: bold;
+    }
+
+/* miscellaneous ends here  */
+
 
 /* responsiveness for all devices */
 
