@@ -1,8 +1,3 @@
-.title-text{
-    /* font: normal bold 50px */
-    margin-bottom: 1rem;
-}
-
 .text-uppercase{
     text-transform: uppercase;
 }
@@ -16,7 +11,7 @@
     border-radius: 4px;
 }
 
-a.primary-button, .button.portfolio-button-all {
+.primary-button, .button.portfolio-button-all {
     background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
@@ -24,13 +19,13 @@ a.primary-button, .button.portfolio-button-all {
     box-shadow: var(--box-shadow);
 }
 
-a.primary-button:hover, .button.portfolio-button-all:hover{
+.primary-button:hover, .portfolio-button-all:hover{
     background: whitesmoke;
     background-clip: padding-box;
     color: black;
 }
 
-a.primary-button::after, a.secondary-button::after, .button.portfolio-button-all::after, .button.portfolio-button::after{
+.primary-button::after, .secondary-button::after, .portfolio-button-all::after, .portfolio-button::after{
     position: absolute;
     top: -2px;
     left: -2px;
@@ -42,14 +37,14 @@ a.primary-button::after, a.secondary-button::after, .button.portfolio-button-all
     border-radius: 4px;
 }
 
-a.secondary-button, .button.portfolio-button{
+.secondary-button, .portfolio-button{
     background: white;
     color: black;
     background-clip: padding-box;
     transition: background .6s ease;
 }
 
-a.secondary-button:hover, .button.portfolio-button:hover{
+.secondary-button:hover, .portfolio-button:hover{
     background: var(--gradient-color);
     color: whitesmoke;
     box-shadow: var(--box-shadow);
