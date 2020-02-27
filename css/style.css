@@ -22,47 +22,29 @@
     color: var(--title-color);
 }
 
-.header-area .main-menu .navbar-nav .active a{
+.header-area .main-menu .navbar-nav .active a, .header-area .main-menu .navbar-nav a:hover{
     background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
-.header-area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 
 /* end navigation */
 
-
 /* banner area  */
 
- .site-main .site-banner .site-title h3{
-    padding-top: 12.5%;
-    font-weight: 500;
- }
-
- .site-main .site-banner .site-title h3::after{
-    content: "";
-    height: 2px;
-    width: 25vw;
-    background: black;
-    display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px)
- }
-
- .site-main .site-banner .site-title h1{
+ .site-main .site-banner .site-title h2{
+    padding-top: 20%;
     font-size: 3.25rem;
+    font-weight: 700;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 4px;
  }
 
- .site-main .site-banner .site-title h4{
+ .site-main .site-banner .site-title h5{
     font-size: 1.5rem;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
  }
 
  .site-main .site-banner .banner-image > img {
@@ -96,12 +78,7 @@
     line-height: 2.25rem;
 }
 
-/* p.para{
-    color: var(--text-color);
-} */
-
 /* end about area */
-
 
 /* skills section starts */
 
@@ -142,8 +119,6 @@
     #skt-logo {
         padding-top: 4.0rem;
     }
-
-
 
 /* portfolio section ends here  */
 
@@ -221,14 +196,16 @@
     .header-area .main-menu .navbar{
         padding: 1rem 0.5rem;
     }
-    .site-main .site-banner .site-title h1{
-        font-size: 3.75rem;
-    }
-    .site-main .site-banner .site-title h4{
-        font-size: 1.25rem;
-    }
-    .site-main .site-banner .site-title h3, .site-main .site-banner .site-title h1, .site-main .site-banner .site-title h4{
+    .site-main .site-banner .site-title h2{
+        font-size: 2.75rem;
+        padding-top: 0;
         text-align: center;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
+    .site-main .site-banner .site-title h5{
+        font-size: 1.25rem;
+        line-height: 1.6;
     }
     .site-main .site-banner .banner-image > img {
         padding: 2.5rem 0;
@@ -245,12 +222,11 @@
         width: 100%;
     }
 
-    #tk-logo {
+    #tk-logo, #skt-logo {
         padding-top: 2.5rem;
     }
 
     #skt-logo {
-        padding-top: 2.5rem;
         max-width: 250px;
     }
 }
@@ -258,18 +234,18 @@
 @media only screen and (max-width:568px){
 
     .about-area{
-        margin: 3rem 0rem 3rem 0rem;
+        margin: 6rem 0rem 3rem 0rem;
     }
     .about-title-text, .skills-title-text, .portfolio-title-text{
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.0rem;
     }
     .about-area .about-image > img {
         height: 20rem;
-        margin-top: 2rem;
+        margin: 0rem 0rem 4rem 0rem;
     }
     .site-main .skills-area{
-        padding: 6rem 0rem 6rem 0rem;
+        padding: 4rem 0rem 4rem 0rem;
     }
     .site-main .portfolio {
         padding: 0rem 0rem 2rem 0rem;
@@ -278,14 +254,9 @@
 
 @media only screen and (max-width: 320px){
 
-    .site-main .site-banner .site-title h3{
-        padding-top: 15%;
-    }
-    .site-main .site-banner .site-title h1{
-        font-size: 2.75rem;
-    }
-    .site-main .site-banner .site-title h4{
-        font-size: 1.1rem;
+    .site-main .site-banner .site-title h2{
+        padding-top: 0%;
+        font-size: 2.25rem;
     }
     .title-text{
         margin-bottom: 0.5rem;
@@ -293,8 +264,14 @@
     .button-center{
         margin: 0 auto;
     }
+    .about-title-text, .skills-title-text, .portfolio-title-text {
+        text-align: center;
+        font-size: 1.75rem;
+    }
+    .contact h4 {
+        font-size: 1.5rem;
+    }
 }
-
 
 /* Bouncing image animation */
 
