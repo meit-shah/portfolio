@@ -34,7 +34,7 @@
 /* banner area  */
 
  .banner-title{
-    padding-top: 20%;
+    padding-top: 30%;
     font-size: 3.25rem;
     font-weight: 700;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -192,7 +192,7 @@
         letter-spacing: 0px;
     }
     .banner-subtitle{
-        font-size: 1.25rem;
+        font-size: 1.35rem;
         line-height: 1.6;
     }
     .banner-image {
